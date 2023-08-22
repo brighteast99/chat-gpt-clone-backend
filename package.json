@@ -1,0 +1,44 @@
+{
+	"name": "gpt",
+	"version": "0.0.1",
+	"private": true,
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"dotenv": "^16.3.1",
+		"express": "~4.16.1",
+		"openai": "^4.0.1",
+		"socket.io": "^4.7.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.22.10",
+		"@babel/eslint-parser": "^7.22.10",
+		"eslint": "^8.47.0",
+		"nodemon": "^3.0.1"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true,
+			"es6": true
+		},
+		"extends": "eslint:recommended",
+		"parserOptions": {
+			"parser": "@babel/eslint-parser",
+			"ecmaVersion": "latest",
+			"sourceType": "module"
+		},
+		"rules": {
+			"no-unused-vars": [
+				"warn",
+				{
+					"argsIgnorePattern": "^_",
+					"varsIgnorePattern": "^_"
+				}
+			]
+		}
+	}
+}
